@@ -23,7 +23,6 @@ div#paraYiGeDuHuiRen {
 div#paraWaiShiZu {
   background-color: red;
   color: white;
-  height: 50vh;
 }
 
 div#paraHuiYing {
@@ -32,12 +31,10 @@ div#paraHuiYing {
 
 div#paraDingGouXuZhi {
   background-color: #fff9bf;
-  height: 45vh;
 }
 
 div#paraLiJiDingGou {
   background-color: #fef9e9;
-  height: 45vh;
 }
 
 div#paraJianKangLiu {
