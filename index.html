@@ -5,14 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>LifeThin 壽瘦GI酮</title>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.6/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
-    
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
 
     <link rel="stylesheet" href="/index.css" crossorigin="anonymous" />
 
@@ -37,239 +46,330 @@
   </head>
   <body>
     <div id="app-container">
-  <ion-app>
-    <ion-content>
+      <ion-app>
+        <ion-content>
+          <div id="paraShaLa"></div>
 
-      <div id="paraShaLa"></div>
+          <div id="paraYiGeDuHuiRen">
+            <ion-grid>
+              <ion-row class="ion-justify-content-center">
+                <h4 id="YiGeDuHuiRen">{{textList.YiGeDuHuiRen}}</h4>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <h2 id="ShouShou">{{textList.ShouShou}}</h2>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <h6 id="GengJianKang">{{textList.GengJianKang}}</h6>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <h6 id="GeDaQiYe">{{textList.GeDaQiYe}}</h6>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <ion-button
+                  color="danger"
+                  href="https://lihi1.com/NXj6k"
+                  target="_blank"
+                >
+                  {{textList.LiJiDianHua}}
+                </ion-button>
+              </ion-row>
+            </ion-grid>
+          </div>
 
-      <div id="paraYiGeDuHuiRen">
-        <ion-grid>
-          <ion-row class="ion-justify-content-center">
-            <h4 id="YiGeDuHuiRen"> {{textList.YiGeDuHuiRen}} </h4>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <h2 id="ShouShou"> {{textList.ShouShou}} </h2>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <h6 id="GengJianKang"> {{textList.GengJianKang}} </h6>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <h6 id="GeDaQiYe"> {{textList.GeDaQiYe}} </h6>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-button color="danger" href="https://lihi1.com/NXj6k" target="_blank"> {{textList.LiJiDianHua}} </ion-button>
-          </ion-row>
-        </ion-grid>
-      </div>
+          <div id="paraWaiShiZu">
+            <ion-grid>
+              <ion-row class="ion-justify-content-center">
+                <h2>{{textList.WaiShiZu}}</h2>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <ion-col size="9">
+                  <p>{{textList.ShangBanWaiShi}}</p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
 
-      <div id="paraWaiShiZu">
-        <ion-grid>
-          <ion-row class="ion-justify-content-center">
-            <h2> {{textList.WaiShiZu}} </h2>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-col size="9">
-              <p> {{textList.ShangBanWaiShi}} </p>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </div>
+          <div style="background-color: #fdf851; color: #df50dc;">
+            <ion-grid>
+              <ion-row class="ion-justify-content-center">
+                <h2>壽瘦GI · 酮的特點</h2>
+              </ion-row>
+            </ion-grid>
+          </div>
 
-      <div style="background-color: #fdf851; color: #df50dc;">
-        <ion-grid>
-          <ion-row class="ion-justify-content-center">
-            <h2>壽瘦GI · 酮的特點</h2>
-          </ion-row>
-        </ion-grid>
-      </div>
+          <div id="imgJianKangLiu"></div>
+          <div id="paraJianKangLiu">
+            <ion-grid>
+              <ion-row class="ion-justify-content-center">
+                <h2>壽瘦GI · 酮締造時代健康流</h2>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <ion-col size="9"
+                  >「GI值」(Glycemic index)
+                  稱為「升糖指數」，是一種「造成血糖上升」的指數，而低GI飲食法，近年風行日本，吃低GI飲食可避免糖尿病患血糖大幅波動，有助於控制血糖；低GI食物還可提供飽足感，也有助於減重族控制體重。</ion-col
+                >
+              </ion-row>
+            </ion-grid>
+          </div>
 
-      <div id="imgJianKangLiu"></div>
-      <div id="paraJianKangLiu">
-        <ion-grid>
-          <ion-row class="ion-justify-content-center">
-            <h2>壽瘦GI · 酮締造時代健康流</h2>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-col size="9">「GI值」(Glycemic index) 稱為「升糖指數」，是一種「造成血糖上升」的指數，而低GI飲食法，近年風行日本，吃低GI飲食可避免糖尿病患血糖大幅波動，有助於控制血糖；低GI食物還可提供飽足感，也有助於減重族控制體重。</ion-col>
-          </ion-row>
-        </ion-grid>
-      </div>
+          <div id="imgShuFei"></div>
+          <div id="paraShuFei">
+            <ion-grid>
+              <ion-row class="ion-justify-content-center">
+                <h2>舒肥的魅力在哪裡？</h2>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <ion-col size="9"
+                  >法文中的sous
+                  vide，指的是真空儲存的過程，1970年代由法國人提出，藉由將空氣抽掉的方式避免食材因氧化而破壞品質，舒肥法實際是將食材密封在真空袋中，放進舒肥低溫烹調機內加熱，低溫烹調的溫度通常約落在40°C～70°C區間。藉由對時間和溫度的精準控制，能讓食材均勻受熱，並保留住最多的養分、水分與自然風味。</ion-col
+                >
+              </ion-row>
+            </ion-grid>
+          </div>
 
-      <div id="imgShuFei"></div>
-      <div id="paraShuFei">
-        <ion-grid>
-          <ion-row class="ion-justify-content-center">
-            <h2>舒肥的魅力在哪裡？</h2>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-col size="9">法文中的sous vide，指的是真空儲存的過程，1970年代由法國人提出，藉由將空氣抽掉的方式避免食材因氧化而破壞品質，舒肥法實際是將食材密封在真空袋中，放進舒肥低溫烹調機內加熱，低溫烹調的溫度通常約落在40°C～70°C區間。藉由對時間和溫度的精準控制，能讓食材均勻受熱，並保留住最多的養分、水分與自然風味。</ion-col>
-          </ion-row>
-        </ion-grid>
-      </div>
+          <div id="imgOuMeiShaLa"></div>
+          <div id="paraOuMeiShaLa">
+            <ion-grid>
+              <ion-row class="ion-justify-content-center">
+                <h2>歐美沙拉的驚艷在這裡</h2>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <ion-col size="9"
+                  >吃膩了台灣單調乏味的沙拉？歐美沙拉擁有不同層次的風味，起司的濃郁，搭配比例恰到的多色蔬果，以及獨特的醬料，在視覺和味覺上給你全新的感受。</ion-col
+                >
+              </ion-row>
+            </ion-grid>
+          </div>
 
-      <div id="imgOuMeiShaLa"></div>
-      <div id="paraOuMeiShaLa">
-        <ion-grid>
-          <ion-row class="ion-justify-content-center">
-            <h2>歐美沙拉的驚艷在這裡</h2>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-col size="9">吃膩了台灣單調乏味的沙拉？歐美沙拉擁有不同層次的風味，起司的濃郁，搭配比例恰到的多色蔬果，以及獨特的醬料，在視覺和味覺上給你全新的感受。</ion-col>
-          </ion-row>
-        </ion-grid>
-      </div>
+          <div id="imgYingYangShi"></div>
+          <div id="paraYingYangShi">
+            <ion-grid>
+              <ion-row class="ion-justify-content-center">
+                <h2>專業營養師設計餐點</h2>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <ion-col size="9"
+                  >均衡的營養餐點設計，每份餐點都有熱量標示，讓你控制熱量好簡單，輕鬆享壽享瘦。</ion-col
+                >
+              </ion-row>
+            </ion-grid>
+          </div>
 
-      <div id="imgYingYangShi"></div>
-      <div id="paraYingYangShi">
-        <ion-grid>
-          <ion-row class="ion-justify-content-center">
-            <h2>專業營養師設計餐點</h2>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-col size="9">均衡的營養餐點設計，每份餐點都有熱量標示，讓你控制熱量好簡單，輕鬆享壽享瘦。</ion-col>
-          </ion-row>
-        </ion-grid>
-      </div>
+          <div id="imgShiCai"></div>
+          <div id="paraShiCai">
+            <ion-grid>
+              <ion-row class="ion-justify-content-center">
+                <h2>當日新鮮食材</h2>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <ion-col size="9"
+                  >每一份拿到的餐點，皆為大廚親自挑選優質食材，當日烹煮而成，絕不拿隔夜菜販售。</ion-col
+                >
+              </ion-row>
+            </ion-grid>
+          </div>
 
-      <div id="imgShiCai"></div>
-      <div id="paraShiCai">
-        <ion-grid>
-          <ion-row class="ion-justify-content-center">
-            <h2>當日新鮮食材</h2>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-col size="9">每一份拿到的餐點，皆為大廚親自挑選優質食材，當日烹煮而成，絕不拿隔夜菜販售。</ion-col>
-          </ion-row>
-        </ion-grid>
-      </div>
+          <div id="paraXiaoGuo" style="background-color: green;">
+            <ion-grid>
+              <ion-row class="ion-justify-content-center">
+                <h2 style="color: #f7f465;">吃低GI餐效果</h2>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FsvgXiaoGuo1.svg?alt=media&token=d39a2074-d582-458b-9395-65fe402ce5cc"
+                  alt=""
+                />
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <ion-col size="9">
+                  <p style="color: white;">
+                    降低罹患代謝症候群、糖尿病、心血管疾病等慢性病的機率
+                  </p>
+                </ion-col>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FsvgXiaoGuo2.svg?alt=media&token=b5bed05f-b7b3-470c-a95a-2fe0b324bc7a"
+                  alt=""
+                />
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <ion-col size="5">
+                  <p style="color: white;">幫助控制體重</p>
+                </ion-col>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FsvgXiaoGuo3.svg?alt=media&token=10551d54-4785-4c61-b963-9387502f854c"
+                  alt=""
+                />
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <ion-col size="7">
+                  <p style="color: white;">
+                    提升好的膽固醇（HDL）、降低三酸甘油脂、不好的膽固醇（LDL）
+                  </p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+          <div id="paraHuiYing">
+            <ion-grid>
+              <ion-row class="ion-justify-content-center">
+                <h2>{{textList.HuiYing}}</h2>
+              </ion-row>
 
-      <div id="paraXiaoGuo" style="background-color: green;">
-        <ion-grid>
-          <ion-row class="ion-justify-content-center">
-            <h2 style="color: #f7f465;">吃低GI餐效果</h2>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <img src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FsvgXiaoGuo1.svg?alt=media&token=d39a2074-d582-458b-9395-65fe402ce5cc" alt="">
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-col size="9">
-              <p style="color: white;">降低罹患代謝症候群、糖尿病、心血管疾病等慢性病的機率</p>
-            </ion-col>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <img src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FsvgXiaoGuo2.svg?alt=media&token=b5bed05f-b7b3-470c-a95a-2fe0b324bc7a" alt="">
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-col size="5">
-              <p style="color: white;">幫助控制體重</p>
-            </ion-col>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <img src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FsvgXiaoGuo3.svg?alt=media&token=10551d54-4785-4c61-b963-9387502f854c" alt="">
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-col size="7">
-              <p style="color: white;">提升好的膽固醇（HDL）、降低三酸甘油脂、不好的膽固醇（LDL）</p>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </div>
-      <div id="paraHuiYing">
-        <ion-grid>
-          <ion-row class="ion-justify-content-center">
-            <h2> {{textList.HuiYing}} </h2>
-          </ion-row>
+              <ion-row v-for="(feedback, idx) in feedbackList">
+                <template id="swap" v-if="idx%2 === 0">
+                  <ion-col size="4">
+                    <ion-avatar>
+                      <img :src="feedback.avatar" />
+                    </ion-avatar>
+                  </ion-col>
+                  <ion-col size="8">
+                    <ion-card>
+                      <ion-card-header> {{feedback.header}} </ion-card-header>
+                      <ion-card-content
+                        v-html="feedback.content"
+                      ></ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                </template>
+                <template id="swap" v-if="idx%2 === 1">
+                  <ion-col size="8">
+                    <ion-card>
+                      <ion-card-header> {{feedback.header}} </ion-card-header>
+                      <ion-card-content
+                        v-html="feedback.content"
+                      ></ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                  <ion-col size="4">
+                    <ion-avatar>
+                      <img :src="feedback.avatar" />
+                    </ion-avatar>
+                  </ion-col>
+                </template>
+              </ion-row>
+            </ion-grid>
+          </div>
+          <div id="paraDingGouXuZhi">
+            <ion-grid>
+              <ion-row class="ion-justify-content-center">
+                <h2>{{textList.DingGouXuZhi}}</h2>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <p v-html="textList.MeiRiWuCan"></p>
+              </ion-row>
+            </ion-grid>
+          </div>
+          <div id="paraLiJiDingGou">
+            <ion-grid>
+              <ion-row class="ion-justify-content-center">
+                <h2>{{textList.LiJiDingGou}}</h2>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <h4>{{textList.JiuCongJinTianQi}}</h4>
+              </ion-row>
+              <ion-row class="ion-justify-content-center">
+                <ion-col>
+                  <ion-button
+                    color="danger"
+                    href="https://lihi1.com/noLcf"
+                    target="_blank"
+                    >電話訂購</ion-button
+                  >
+                  <ion-button
+                    color="primary"
+                    href="https://lihi1.com/mrm0o"
+                    target="_blank"
+                    >FB訂購</ion-button
+                  >
+                  <ion-button
+                    color="success"
+                    href="https://lihi1.com/d6B3R"
+                    target="_blank"
+                    >Line訂購</ion-button
+                  >
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+          <div id="paraGanXie">
+            <ion-grid>
+              <ion-row class="ion-justify-content-center">
+                <h2>{{textList.GanXie}}</h2>
+              </ion-row>
+              <ion-row>
+                <ion-col
+                  ><img
+                    src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoTaiZhongZongYiYuan.jpg?alt=media&token=64dfc3ff-560c-4291-9126-f699aaec4453"
+                    alt=""
+                /></ion-col>
+                <ion-col
+                  ><img
+                    src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoHuaShengDun.jpg?alt=media&token=d648bc1a-b6ce-46da-89ca-cc49fe6de4ce"
+                    alt=""
+                /></ion-col>
+                <ion-col class="ion-align-self-center"
+                  ><img
+                    src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoHanXiang.jpg?alt=media&token=2432ea87-89b7-4e64-9763-3d75b5e2c7ef"
+                    alt=""
+                /></ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="ion-align-self-center"
+                  ><img
+                    src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoYiDian.jpg?alt=media&token=97c4cd7b-8ee0-415d-8962-0e74111b0280"
+                    alt=""
+                /></ion-col>
+                <ion-col
+                  ><img
+                    src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoDiYiChanWuBaoXian.jpg?alt=media&token=d152006a-2a05-4059-8f14-b1237ce03e0b"
+                    alt=""
+                /></ion-col>
+                <ion-col class="ion-align-self-center"
+                  ><img
+                    src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoLinXin.jpg?alt=media&token=3e13588b-05ba-4923-a43e-8d21a41b87bd"
+                    alt=""
+                /></ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="ion-align-self-center"
+                  ><img
+                    src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoZhongGuoYi.jpg?alt=media&token=b251c606-20cb-40f0-be12-d35e83fcbe80"
+                    alt=""
+                /></ion-col>
+                <ion-col
+                  ><img
+                    src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoJianZhi.jpg?alt=media&token=505e766a-f8b4-418d-9e27-72dbebdcde06"
+                    alt=""
+                /></ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="ion-align-self-center"
+                  ><img
+                    src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoChangAnYiYuan.jpg?alt=media&token=339c0cd9-e168-4bf4-acdc-63f231c03607"
+                    alt=""
+                /></ion-col>
 
-          <ion-row v-for="(feedback, idx) in feedbackList">
-            <template id="swap" v-if="idx%2 === 0">
-              <ion-col size="4">
-                <ion-avatar>
-                  <img :src="feedback.avatar">
-                </ion-avatar>
-              </ion-col>
-              <ion-col size="8">
-                <ion-card>
-                  <ion-card-header> {{feedback.header}} </ion-card-header>
-                  <ion-card-content v-html="feedback.content"></ion-card-content>
-                </ion-card>
-              </ion-col>
-            </template>
-            <template id="swap" v-if="idx%2 === 1">
-              <ion-col size="8">
-                <ion-card>
-                  <ion-card-header> {{feedback.header}} </ion-card-header>
-                  <ion-card-content v-html="feedback.content"></ion-card-content>
-                </ion-card>
-              </ion-col>
-              <ion-col size="4">
-                <ion-avatar>
-                  <img :src="feedback.avatar">
-                </ion-avatar>
-              </ion-col>
-            </template>
-          </ion-row>
+                <ion-col class="ion-align-self-center"
+                  ><img
+                    src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoZhongShanYi.jpg?alt=media&token=fda1d79f-521a-4aa2-9acf-20509aed0188"
+                    alt=""
+                /></ion-col>
+                <ion-col
+                  ><img
+                    src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoHuanBaoShu.jpg?alt=media&token=1db78998-9b10-465f-9f34-aeb895362c2b"
+                    alt=""
+                /></ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+        </ion-content>
+      </ion-app>
+    </div>
 
-        </ion-grid>
-      </div>
-      <div id="paraDingGouXuZhi">
-        <ion-grid>
-          <ion-row class="ion-justify-content-center">
-            <h2> {{textList.DingGouXuZhi}} </h2>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <p v-html="textList.MeiRiWuCan"></p>
-          </ion-row>
-        </ion-grid>
-      </div>
-      <div id="paraLiJiDingGou">
-        <ion-grid>
-          <ion-row class="ion-justify-content-center">
-            <h2> {{textList.LiJiDingGou}} </h2>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <h4> {{textList.JiuCongJinTianQi}} </h4>
-          </ion-row>
-          <ion-row class="ion-justify-content-center">
-            <ion-col>
-              <ion-button color="danger" href="https://lihi1.com/noLcf" target="_blank">電話訂購</ion-button>
-              <ion-button color="primary">FB訂購</ion-button>
-              <ion-button color="success" href="https://lihi1.com/d6B3R" target="_blank">Line訂購</ion-button>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </div>
-      <div id="paraGanXie">
-        <ion-grid>
-          <ion-row class="ion-justify-content-center">
-            <h2> {{textList.GanXie}} </h2>
-          </ion-row>
-          <ion-row>
-            <ion-col><img src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoTaiZhongZongYiYuan.jpg?alt=media&token=64dfc3ff-560c-4291-9126-f699aaec4453" alt=""></ion-col>
-            <ion-col><img src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoHuaShengDun.jpg?alt=media&token=d648bc1a-b6ce-46da-89ca-cc49fe6de4ce" alt=""></ion-col>
-            <ion-col class="ion-align-self-center"><img src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoHanXiang.jpg?alt=media&token=2432ea87-89b7-4e64-9763-3d75b5e2c7ef" alt=""></ion-col>
-          </ion-row>
-          <ion-row>
-            <ion-col class="ion-align-self-center"><img src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoYiDian.jpg?alt=media&token=97c4cd7b-8ee0-415d-8962-0e74111b0280" alt=""></ion-col>
-            <ion-col><img src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoDiYiChanWuBaoXian.jpg?alt=media&token=d152006a-2a05-4059-8f14-b1237ce03e0b" alt=""></ion-col>
-            <ion-col class="ion-align-self-center"><img src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoLinXin.jpg?alt=media&token=3e13588b-05ba-4923-a43e-8d21a41b87bd" alt=""></ion-col>
-          </ion-row>
-          <ion-row>
-            <ion-col class="ion-align-self-center"><img src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoZhongGuoYi.jpg?alt=media&token=b251c606-20cb-40f0-be12-d35e83fcbe80" alt=""></ion-col>
-            <ion-col><img src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoJianZhi.jpg?alt=media&token=505e766a-f8b4-418d-9e27-72dbebdcde06" alt=""></ion-col>
-          </ion-row>
-          <ion-row>
-            <ion-col class="ion-align-self-center"><img src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoChangAnYiYuan.jpg?alt=media&token=339c0cd9-e168-4bf4-acdc-63f231c03607" alt=""></ion-col>
-
-            <ion-col class="ion-align-self-center"><img src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoZhongShanYi.jpg?alt=media&token=fda1d79f-521a-4aa2-9acf-20509aed0188" alt=""></ion-col>
-            <ion-col><img src="https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FlogoHuanBaoShu.jpg?alt=media&token=1db78998-9b10-465f-9f34-aeb895362c2b" alt=""></ion-col>
-          </ion-row>
-        </ion-grid>
-      </div>
-    </ion-content>
-  </ion-app>
-
-</div>
-    
     <script src="/index.js"></script>
   </body>
 </html>
