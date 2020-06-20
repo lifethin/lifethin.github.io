@@ -25,4 +25,10 @@ const router = new VueRouter({
 // whole app router-aware.
 const dgiApp = new Vue({
   router,
+  methods: {
+    onClickShowMenu: function () {
+      menuController.enable(true, "first");
+      menuController.open("first");
+    },
+  },
 }).$mount("#dgi-app");

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@ionic/core": "^5.2.2"
+  },
   "devDependencies": {
     "http-server": "^0.12.1",
     "webpack": "^4.43.0",
