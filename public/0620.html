@@ -7,6 +7,7 @@
     <title>Document</title>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
     <script
       type="module"
       src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
@@ -40,12 +41,13 @@
         </ion-header>
 
         <ion-content>
-          <img src="images/0620-02.jpg" alt="" />
-          <!-- <ion-img src="images/0620-02.jpg"></ion-img> -->
+          <!-- route outlet -->
+          <!-- component matched by the route will render here -->
+          <router-view></router-view>
         </ion-content>
       </ion-app>
     </div>
 
-    <script src="0620.js"></script>
+    <script src="bundle.js"></script>
   </body>
 </html>
