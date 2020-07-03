@@ -1,0 +1,124 @@
+h2 {
+}
+
+h4 {
+}
+
+h6 {
+}
+
+div#paraShaLa {
+  height: 75vh;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FbgShaLa.jpg?alt=media&token=5a3158a4-4b06-427b-b4de-ed3500ccf8c3");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+div#paraYiGeDuHuiRen {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FbgYiGeDuHuiRen.jpg?alt=media&token=f28389a2-6217-4bd8-a49e-5f8f6f6fe77a");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100% 100%;
+}
+
+div#paraWaiShiZu {
+  background-color: red;
+  color: white;
+}
+
+div#paraHuiYing {
+  background-color: #fff39d;
+}
+
+div#paraDingGouXuZhi {
+  background-color: #fff9bf;
+}
+
+div#paraLiJiDingGou {
+  background-color: #fef9e9;
+}
+
+div#paraJianKangLiu {
+  background-color: #7cb130;
+  color: white;
+}
+
+div#imgJianKangLiu {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FimgJianKangLiu.jpg?alt=media&token=7ecb2467-6940-4e6f-8bf9-27ebe2bf203a");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 45vh;
+}
+
+div#paraShuFei {
+  background-color: #df50dc;
+  color: white;
+}
+
+div#imgShuFei {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FimgShuFei.jpg?alt=media&token=b2f31544-8b87-4aa0-9a1a-54cedd6d62d0");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 45vh;
+}
+
+div#paraOuMeiShaLa {
+  background-color: #fdf851;
+  color: #df50dc;
+}
+
+div#imgOuMeiShaLa {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FimgOuMeiShaLa.jpg?alt=media&token=2eb8be57-0262-4203-bbc3-43d074263f7c");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 45vh;
+}
+
+div#paraYingYangShi {
+  background-color: #7cb130;
+  color: white;
+}
+
+div#imgYingYangShi {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FimgYingYangShi.jpg?alt=media&token=61541ad3-0281-4d62-bd36-2179debf3f45");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 45vh;
+}
+
+div#paraShiCai {
+  background-color: #df50dc;
+  color: white;
+}
+
+div#imgShiCai {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/shoushou-dgi.appspot.com/o/images%2FimgShiCai.jpg?alt=media&token=42a1c21b-e1ba-4096-a5a3-4ba547e8f1aa");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 45vh;
+}
+
+#YiGeDuHuiRen {
+  color: green;
+}
+
+#ShouShou {
+  color: red;
+}
+
+#GengJianKang,
+#GeDaQiYe {
+  color: green;
+}
+
+ion-card-header {
+  background-color: #fee75d;
+}
+
+ion-card-content {
+  background-color: #fff9cb;
+}
+
+ion-avatar {
+  width: 33vw;
+  height: 33vw;
+}
