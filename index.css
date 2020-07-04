@@ -1,3 +1,7 @@
 div#dinggou {
   background-color: #eb5ce8;
 }
+
+img {
+  display: block;
+}
