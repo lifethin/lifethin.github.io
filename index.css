@@ -5,3 +5,11 @@ div#dinggou {
 img {
   display: block;
 }
+
+ion-col {
+  padding: 0px;
+}
+
+ion-grid {
+  padding: 0px;
+}
