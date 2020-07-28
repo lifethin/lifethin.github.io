@@ -5,19 +5,19 @@ Vue.component("app-top-navbar", {
 });
 
 Vue.component("app-fixed-buttom-navbar", {
-  template: `<nav class="navbar fixed-buttom navbar-expand-sm row" id="app-fixed-buttom-navbar">
+  template: `<v-footer fixed id="app-fixed-buttom-navbar">
   <div class="col-4"></div>
   
   <a class="col-4" href="https://lihi1.com/4bBiU" target="_blank">
-    <img src="images/fathersday-baoming.svg" style="width: 100%;">
+    <img src="images/fathersday-baoming.svg" style="height: 100%;">
   </a>
   <a class="col-4" href="https://lihi1.com/9sdiA" target="_blank">
-    <img src="images/fathersday-dianhua.svg" style="width: 100%;">
+    <img src="images/fathersday-dianhua.svg" style="height: 100%;">
   </a>
 
 
   </div>
-</nav>`,
+</v-footer>`,
 });
 
 Vue.component("app-static-content", {
@@ -29,6 +29,7 @@ Vue.component("app-static-content", {
 
 const dgiApp = new Vue({
   el: "#dgi-app",
+  vuetify: new Vuetify(),
   data: function () {
     return {
       isMobile: true,

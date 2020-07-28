@@ -23,8 +23,9 @@ ion-grid {
   width: 100%;
 }
 
+body,
 #dgi-app,
-body {
+#v-app {
   margin: 0;
   padding: 0;
   overflow: hidden;
