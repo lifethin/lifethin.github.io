@@ -15,14 +15,19 @@ ion-grid {
 }
 
 #app-static-content {
-  margin-top: 7vh;
   height: 86vh;
   overflow-y: auto;
 }
 
-#dgi-app {
+#app-static-content > img {
+  width: 100%;
+}
+
+#dgi-app,
+body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 #app-top-navbar {
