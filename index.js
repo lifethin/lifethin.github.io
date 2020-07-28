@@ -6,17 +6,15 @@ Vue.component("app-top-navbar", {
 
 Vue.component("app-fixed-buttom-navbar", {
   template: `<v-footer fixed id="app-fixed-buttom-navbar">
-  <div class="col-4"></div>
-  
-  <a class="col-4" href="https://lihi1.com/4bBiU" target="_blank">
-    <img src="images/fathersday-baoming.svg" style="height: 100%;">
-  </a>
-  <a class="col-4" href="https://lihi1.com/9sdiA" target="_blank">
-    <img src="images/fathersday-dianhua.svg" style="height: 100%;">
-  </a>
-
-
-  </div>
+  <v-row justify="center" no-gutters>
+    <v-col cols="4"></v-col>
+    <v-col cols="4">
+      <v-btn rounded elevation="20" color="warning" href="https://lihi1.com/4bBiU" target="_blank">立即報名</v-btn>
+    </v-col>
+    <v-col cols="4">
+      <v-btn rounded elevation="20" color="warning" href="https://lihi1.com/9sdiA" target="_blank">電話聯絡</v-btn>
+    </v-col>
+  </v-row>
 </v-footer>`,
 });
 
