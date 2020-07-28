@@ -1,7 +1,7 @@
 Vue.component("app-top-navbar", {
-  template: `<nav class="navbar sticky-top navbar-expand-sm" id="app-top-navbar">
+  template: `<v-toolbar height="7%" id="app-top-navbar">
   
-</nav>`,
+</v-toolbar>`,
 });
 
 Vue.component("app-fixed-buttom-navbar", {
