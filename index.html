@@ -20,252 +20,36 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="index.css" />
-
-    <style>
-      #ion-toolbar-1 {
-        --background: #690091;
-        --border-color: #690091;
-        --color: white;
-      }
-
-      #ion-tab-bar-1 {
-        --background: #3c5c1d;
-        --border-color: #3c5c1d;
-        --color: white;
-      }
-    </style>
   </head>
   <body>
-    <div id="dgi-app">
-      <ion-app>
-        <ion-header>
-          <ion-toolbar id="ion-toolbar-1">
-            <ion-title>
-              <ion-grid>
-                <ion-row>
-                  <ion-col size="6">
-                    <img src="images/logo-resize.jpg" alt="" />
-                  </ion-col>
-
-                  <ion-thumbnail>
-                    <a href="https://lihi1.com/6f8FO" target="_blank">
-                      <img src="images/icon-phone.png" alt="" />
-                    </a>
-                  </ion-thumbnail>
-
-                  <ion-thumbnail>
-                    <a href="https://lihi1.com/It57O" target="_blank">
-                      <img src="images/icon-fb.png" alt="" />
-                    </a>
-                  </ion-thumbnail>
-
-                  <ion-thumbnail>
-                    <a href="https://lihi1.com/lzw8w" target="_blank">
-                      <img src="images/icon-line.png" alt="" />
-                    </a>
-                  </ion-thumbnail>
-                </ion-row>
-              </ion-grid>
-            </ion-title>
-          </ion-toolbar>
-        </ion-header>
-
-        <ion-content>
-          <ion-tabs>
-            <ion-tab tab="tab-fathersday">
-              <ion-nav>
-                <ion-content>
-                  <div id="mobile">
-                    <ion-grid>
-                      <ion-row>
-                        <img src="images/0723-head.jpg" alt="" />
-                      </ion-row>
-                      <ion-row>
-                        <a href="https://lihi1.com/4bBiU" target="_blank">
-                          <img src="images/0723-baoming.jpg" alt="" />
-                        </a>
-                      </ion-row>
-                      <ion-row>
-                        <img src="images/0723-shoulders.jpg" alt="" />
-                      </ion-row>
-                      <ion-row>
-                        <ion-col>
-                          <a href="https://lihi1.com/XTQsS" target="_blank">
-                            <img src="images/0723-twoset-01.jpg" alt="" />
-                          </a>
-                        </ion-col>
-                        <ion-col>
-                          <a href="https://lihi1.com/9sdiA" target="_blank">
-                            <img src="images/0723-twoset-02.jpg" alt="" />
-                          </a>
-                        </ion-col>
-                      </ion-row>
-                    </ion-grid>
-
-                    <img src="images/0723-knees.jpg" alt="" />
-                  </div>
-                  <!-- <div id="desktop" v-else>
-                    <img src="images/0705-01-head-web.jpg" alt="" />
-
-                    <a href="https://lihi1.com/NXj6k" target="_blank">
-                      <img src="images/0705-01-shoulders-web.jpg" alt="" />
-                    </a>
-
-                    <img src="images/0705-01-knees-web.jpg" alt="" />
-
-                    <div id="dinggou">
-                      <ion-grid>
-                        <ion-row>
-                          <img src="images/dinggou-header.jpg" alt="" />
-                        </ion-row>
-                        <ion-row>
-                          <ion-col size="3"></ion-col>
-                          <ion-col>
-                            <a href="https://lihi1.com/noLcf" target="_blank">
-                              <img src="images/btn-phone.jpg" alt="" />
-                            </a>
-                          </ion-col>
-                          <ion-col>
-                            <a href="https://lihi1.com/mrm0o" target="_blank">
-                              <img src="images/btn-fb.jpg" alt="" />
-                            </a>
-                          </ion-col>
-                          <ion-col>
-                            <a href="https://lihi1.com/d6B3R" target="_blank">
-                              <img src="images/btn-line.jpg" alt="" />
-                            </a>
-                          </ion-col>
-                          <ion-col size="3"></ion-col>
-                        </ion-row>
-                      </ion-grid>
-                    </div>
-
-                    <img src="images/0705-01-toes-web.jpg" alt="" />
-                  </div> -->
-                </ion-content>
-              </ion-nav>
-            </ion-tab>
-
-            <ion-tab tab="tab-schedule">
-              <ion-nav>
-                <ion-content>
-                  <div id="mobile" v-if="isMobile">
-                    <img src="images/0705-01-head.jpg" alt="" />
-                    <a href="https://lihi1.com/NXj6k" target="_blank">
-                      <img src="images/0705-01-shoulders.jpg" alt="" />
-                    </a>
-                    <img src="images/0705-01-knees.jpg" alt="" />
-
-                    <div id="dinggou">
-                      <ion-grid>
-                        <ion-row>
-                          <img src="images/dinggou-header.jpg" alt="" />
-                        </ion-row>
-                        <ion-row>
-                          <ion-col size="3"></ion-col>
-                          <ion-col>
-                            <a href="https://lihi1.com/noLcf" target="_blank">
-                              <img src="images/btn-phone.jpg" alt="" />
-                            </a>
-                          </ion-col>
-                          <ion-col>
-                            <a href="https://lihi1.com/mrm0o" target="_blank">
-                              <img src="images/btn-fb.jpg" alt="" />
-                            </a>
-                          </ion-col>
-                          <ion-col>
-                            <a href="https://lihi1.com/d6B3R" target="_blank">
-                              <img src="images/btn-line.jpg" alt="" />
-                            </a>
-                          </ion-col>
-                          <ion-col size="3"></ion-col>
-                        </ion-row>
-                      </ion-grid>
-                    </div>
-
-                    <img src="images/0705-01-toes.jpg" alt="" />
-                  </div>
-                  <div id="desktop" v-else>
-                    <img src="images/0705-01-head-web.jpg" alt="" />
-
-                    <a href="https://lihi1.com/NXj6k" target="_blank">
-                      <img src="images/0705-01-shoulders-web.jpg" alt="" />
-                    </a>
-
-                    <img src="images/0705-01-knees-web.jpg" alt="" />
-
-                    <div id="dinggou">
-                      <ion-grid>
-                        <ion-row>
-                          <img src="images/dinggou-header.jpg" alt="" />
-                        </ion-row>
-                        <ion-row>
-                          <ion-col size="3"></ion-col>
-                          <ion-col>
-                            <a href="https://lihi1.com/noLcf" target="_blank">
-                              <img src="images/btn-phone.jpg" alt="" />
-                            </a>
-                          </ion-col>
-                          <ion-col>
-                            <a href="https://lihi1.com/mrm0o" target="_blank">
-                              <img src="images/btn-fb.jpg" alt="" />
-                            </a>
-                          </ion-col>
-                          <ion-col>
-                            <a href="https://lihi1.com/d6B3R" target="_blank">
-                              <img src="images/btn-line.jpg" alt="" />
-                            </a>
-                          </ion-col>
-                          <ion-col size="3"></ion-col>
-                        </ion-row>
-                      </ion-grid>
-                    </div>
-
-                    <img src="images/0705-01-toes-web.jpg" alt="" />
-                  </div>
-                </ion-content>
-              </ion-nav>
-            </ion-tab>
-
-            <ion-tab tab="tab-speaker">
-              <ion-nav>
-                <ion-content>
-                  <img src="images/0702-02.jpg" alt="" v-if="isMobile" />
-                  <img src="images/0703-02.jpg" alt="" v-else />
-                </ion-content>
-              </ion-nav>
-            </ion-tab>
-
-            <ion-tab tab="tab-map">
-              <ion-nav>
-                <ion-content>
-                  <img src="images/0702-04.jpg" alt="" v-if="isMobile" />
-                  <img src="images/0703-04.jpg" alt="" v-else />
-                </ion-content>
-              </ion-nav>
-            </ion-tab>
-
-            <ion-tab-bar slot="bottom" id="ion-tab-bar-1">
-              <ion-tab-button tab="tab-fathersday">
-                <ion-label>父親節</ion-label>
-              </ion-tab-button>
-
-              <ion-tab-button tab="tab-schedule">
-                <ion-label>首頁</ion-label>
-              </ion-tab-button>
-
-              <ion-tab-button tab="tab-speaker">
-                <ion-label>餐點介紹</ion-label>
-              </ion-tab-button>
-
-              <ion-tab-button tab="tab-map">
-                <ion-label>派對外燴服務</ion-label>
-              </ion-tab-button>
-            </ion-tab-bar>
-          </ion-tabs>
-        </ion-content>
-      </ion-app>
+    <div id="dgi-app" class="container-fluid">
+      <app-top-navbar></app-top-navbar>
+      <app-static-content></app-static-content>
+      <app-fixed-buttom-navbar></app-fixed-buttom-navbar>
     </div>
 
     <script src="index.js"></script>

@@ -13,3 +13,28 @@ ion-col {
 ion-grid {
   padding: 0px;
 }
+
+#app-static-content {
+  height: 86vh;
+  overflow-y: auto;
+}
+
+#dgi-app {
+  margin: 0;
+  padding: 0;
+}
+
+#app-top-navbar {
+  height: 7vh;
+  background-color: #690091;
+  background-image: url("images/logo-resize.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+#app-fixed-buttom-navbar {
+  height: 7vh;
+  background-image: url("images/fixed-buttom-navbar-background.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
