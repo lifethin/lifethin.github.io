@@ -1,11 +1,11 @@
 Vue.component("app-top-navbar", {
-  template: `<nav class="navbar sticky-top navbar-expand-sm" id="app-top-navbar">
+  template: `<nav class="navbar fixed-top navbar-expand-sm" id="app-top-navbar">
   
 </nav>`,
 });
 
 Vue.component("app-fixed-buttom-navbar", {
-  template: `<nav class="navbar fix-buttom navbar-expand-sm row" id="app-fixed-buttom-navbar">
+  template: `<nav class="navbar fixed-buttom navbar-expand-sm row" id="app-fixed-buttom-navbar">
   <div class="col-4"></div>
   
   <a class="col-4" href="https://lihi1.com/4bBiU" target="_blank">

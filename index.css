@@ -15,6 +15,7 @@ ion-grid {
 }
 
 #app-static-content {
+  margin-top: 7vh;
   height: 86vh;
   overflow-y: auto;
 }
