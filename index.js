@@ -1,5 +1,5 @@
 Vue.component("app-top-navbar", {
-  template: `<nav class="navbar fixed-top navbar-expand-sm" id="app-top-navbar">
+  template: `<nav class="navbar sticky-top navbar-expand-sm" id="app-top-navbar">
   
 </nav>`,
 });
