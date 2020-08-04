@@ -58,12 +58,28 @@ const dgiApp = new Vue({
   },
   mounted() {
     this.checkIsMobile();
+    this.initFirebase();
   },
   methods: {
     checkIsMobile: function() {
       if (navigator.userAgent.indexOf("obile") === -1) {
         this.isMobile = false;
       }
+    },
+    initFirebase: function() {
+      const firebaseConfig = {
+        apiKey: "AIzaSyAJlHb0qtw0gjp009vv6rHNkgP9ZHybAmM",
+        authDomain: "shoushou-dgi.firebaseapp.com",
+        databaseURL: "https://shoushou-dgi.firebaseio.com",
+        projectId: "shoushou-dgi",
+        storageBucket: "shoushou-dgi.appspot.com",
+        messagingSenderId: "563968978705",
+        appId: "1:563968978705:web:df8a9187860ef5658ee6b0",
+        measurementId: "G-8NBCPBSVXW"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
     }
   }
 });
