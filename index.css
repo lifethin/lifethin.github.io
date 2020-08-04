@@ -19,7 +19,7 @@ ion-grid {
   overflow-y: auto;
 }
 
-#app-static-content > img {
+#app-static-content img {
   width: 100%;
 }
 
