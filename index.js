@@ -21,17 +21,14 @@ Vue.component("app-fixed-buttom-navbar", {
 Vue.component("app-static-content", {
   template: `<div id="app-static-content">
   <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="tab">
-    <v-tab key="One">父親節</v-tab>
+    
 
     <v-tab key="Three">餐點介紹</v-tab>
     <v-tab key="Four">派對外燴服務</v-tab>
   </v-tabs>
 
   <v-tabs-items v-model="tab">
-    <v-tab-item key="One">
-      <img src="images/0728-phone-01.jpg">
-      <img src="images/0728-phone-02.jpg">
-    </v-tab-item>
+    
     <v-tab-item key="Three">
       <img src="images/0702-02.jpg">
     </v-tab-item>
