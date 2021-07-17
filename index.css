@@ -15,7 +15,6 @@ ion-grid {
 }
 
 #app-static-content {
-  height: 86vh;
   overflow-y: auto;
 }
 
@@ -40,7 +39,7 @@ body,
 }
 
 #app-fixed-buttom-navbar {
-  height: 7vh;
+  height: 53px;
   background-image: url("images/fixed-buttom-navbar-background.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -53,11 +52,15 @@ body,
 }
 
 header {
-  height: 42px !important;
+  height: 43px !important;
   box-shadow: none !important;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 main {
   background: #690091;
-  padding-top: 49px !important;
+  padding-top: 91px !important;
+  padding-bottom: 53px !important;
 }
