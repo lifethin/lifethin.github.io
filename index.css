@@ -53,11 +53,11 @@ body,
 }
 
 header {
-  height: 42px;
-  box-shadow: none;
+  height: 42px !important;
+  box-shadow: none !important;
 }
 
 main {
   background: #690091;
-  padding-top: 49px;
+  padding-top: 49px !important;
 }
