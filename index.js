@@ -5,14 +5,13 @@ Vue.component("app-top-navbar", {
 
 Vue.component("app-fixed-buttom-navbar", {
   template: `<v-footer fixed id="app-fixed-buttom-navbar">
-  <v-row justify="center" no-gutters>
-    <v-col cols="4"></v-col>
-    <v-col cols="4">
+  <v-row justify="center">
+    <div>
       <v-btn rounded elevation="20" color="warning" href="https://lihi1.com/4bBiU" target="_blank">立即報名</v-btn>
-    </v-col>
-    <v-col cols="4">
+    </div>
+    <div>
       <v-btn rounded elevation="20" color="warning" href="https://lihi1.com/9sdiA" target="_blank">電話聯絡</v-btn>
-    </v-col>
+    </div>
   </v-row>
 </v-footer>`
 });
