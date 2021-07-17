@@ -54,6 +54,7 @@ body,
 
 header {
   height: 42px;
+  box-shadow: none;
 }
 
 main {
