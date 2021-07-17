@@ -28,13 +28,13 @@ Vue.component("app-static-content", {
 
   <v-tabs-items v-model="tab" class="content-area">
     <v-tab-item key="Main">
-      <img src="images/20210714_home_phone.jpg?ver=1.1">
+      <img src="images/20210714_home_phone.jpg?ver=1.2">
     </v-tab-item>
     <v-tab-item key="Three">
-      <img src="images/20210714_menu_phone.jpg?ver=1.1">
+      <img src="images/20210714_menu_phone.jpg?ver=1.2">
     </v-tab-item>
     <v-tab-item key="Four">
-      <img src="images/20210714_party_phone.jpg?ver=1.1">
+      <img src="images/20210714_party_phone.jpg?ver=1.2">
     </v-tab-item>
   </v-tabs-items>
   
