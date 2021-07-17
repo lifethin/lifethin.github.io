@@ -20,13 +20,13 @@ Vue.component("app-fixed-buttom-navbar", {
 
 Vue.component("app-static-content", {
   template: `<div id="app-static-content">
-  <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="tab">
+  <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="tab" style="position: fixed;top: 46px;z-index: 100;">
     <v-tab key="Main">首頁</v-tab>
     <v-tab key="Three">餐點介紹</v-tab>
     <v-tab key="Four">派對外燴服務</v-tab>
   </v-tabs>
 
-  <v-tabs-items v-model="tab">
+  <v-tabs-items v-model="tab" style="margin-top: 47px;">
     <v-tab-item key="Main">
       <img src="images/20210714_home_phone.jpg">
     </v-tab-item>
