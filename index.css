@@ -47,11 +47,16 @@ body,
 }
 
 .menu-tab {
-  position: fixed;
-  top: 46px;
-  z-index: 100;
+    position: fixed;
+    top: 43px;
+    z-index: 100;
 }
 
-.content-area {
-  margin-top: 47px;
+header {
+  height: 42px;
+}
+
+main {
+  background: #690091;
+  padding-top: 49px;
 }
