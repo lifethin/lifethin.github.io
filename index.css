@@ -45,3 +45,13 @@ body,
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+
+.menu-tab {
+  position: fixed;
+  top: 46px;
+  z-index: 100;
+}
+
+.content-area {
+  margin-top: 47px;
+}
