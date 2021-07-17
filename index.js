@@ -1,6 +1,10 @@
 Vue.component("app-top-navbar", {
   template: `<v-toolbar height="7%" id="app-top-navbar">
-  
+  <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="tab" class="menu-tab">
+    <v-tab key="Main">首頁</v-tab>
+    <v-tab key="Three">餐點介紹</v-tab>
+    <v-tab key="Four">派對外燴服務</v-tab>
+  </v-tabs>
 </v-toolbar>`
 });
 
@@ -20,12 +24,6 @@ Vue.component("app-fixed-buttom-navbar", {
 
 Vue.component("app-static-content", {
   template: `<div id="app-static-content">
-  <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="tab" class="menu-tab">
-    <v-tab key="Main">首頁</v-tab>
-    <v-tab key="Three">餐點介紹</v-tab>
-    <v-tab key="Four">派對外燴服務</v-tab>
-  </v-tabs>
-
   <v-tabs-items v-model="tab" class="content-area">
     <v-tab-item key="Main">
       <img src="images/20210714_home_phone.jpg?ver=1.3">
