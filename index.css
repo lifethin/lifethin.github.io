@@ -82,6 +82,9 @@ footer .row {
   header {
     height: 53px !important;
   }
+  .menu-tab {
+    display: none;
+  }
   .top-menu-tab {
     display: none;
   }
