@@ -86,7 +86,7 @@ footer .row {
     display: none;
   }
   .top-menu-tab {
-    display: none;
+    display: block;
   }
   main {
     padding-top: 53px !important;
