@@ -12,28 +12,22 @@ Vue.component("app-static-content", {
   </v-tabs>
   <v-tabs-items v-model="tab" class="content-area">
     <v-tab-item key="Main">
-      <img
-        src="images/20210714_home_phone.jpg?ver=1.3"
-        srcset="
-          images/20210714_home_phone.jpg?ver=1.3 1x, 
-          images/20210714_home_desktop.jpg?ver=1.3 2x
-        ">
+      <picture>
+        <source media="(min-width: 465px)" srcset="images/20210714_home_desktop.jpg?ver=1.3" />
+        <img src="images/20210714_home_phone.jpg?ver=1.3" />
+      </picture>
     </v-tab-item>
     <v-tab-item key="Three">
-      <img
-        src="images/20210714_menu_phone.jpg?ver=1.3"
-        srcset="
-          images/20210714_menu_phone.jpg?ver=1.3 1x, 
-          images/20210714_menu_desktop.jpg?ver=1.3 2x
-        ">
+      <picture>
+        <source media="(min-width: 465px)" srcset="images/20210714_menu_desktop.jpg?ver=1.3" />
+        <img src="images/20210714_menu_phone.jpg?ver=1.3" />
+      </picture>
     </v-tab-item>
     <v-tab-item key="Four">
-      <img
-        src="images/20210714_party_phone.jpg?ver=1.3"
-        srcset="
-          images/20210714_party_phone.jpg?ver=1.3 1x, 
-          images/20210714_party_desktop.jpg?ver=1.3 2x
-        ">
+      <picture>
+        <source media="(min-width: 465px)" srcset="images/20210714_party_desktop.jpg?ver=1.3" />
+        <img src="images/20210714_party_phone.jpg?ver=1.3" />
+      </picture>
     </v-tab-item>
   </v-tabs-items>
   
