@@ -1,5 +1,10 @@
 Vue.component("app-top-navbar", {
   template: `<v-toolbar height="7%" id="app-top-navbar">
+  <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="tab" class="top-menu-tab">
+    <v-tab key="Main">首頁</v-tab>
+    <v-tab key="Three">餐點介紹</v-tab>
+    <v-tab key="Four">派對外燴服務</v-tab>
+  </v-tabs>
 </v-toolbar>`
 });
 
