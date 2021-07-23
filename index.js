@@ -3,19 +3,6 @@ Vue.component("app-top-navbar", {
 </v-toolbar>`
 });
 
-Vue.component("app-fixed-buttom-navbar", {
-  template: `<v-footer fixed id="app-fixed-buttom-navbar">
-  <v-row justify="center">
-    <div>
-      <v-btn rounded elevation="20" color="warning" href="https://lihi1.com/4bBiU" target="_blank">立即報名</v-btn>
-    </div>
-    <div>
-      <v-btn rounded elevation="20" color="warning" href="https://lihi1.com/9sdiA" target="_blank">電話聯絡</v-btn>
-    </div>
-  </v-row>
-</v-footer>`
-});
-
 Vue.component("app-static-content", {
   template: `<div id="app-static-content">
   <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="tab" class="menu-tab">
