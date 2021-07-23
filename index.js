@@ -1,13 +1,3 @@
-Vue.component("app-top-navbar", {
-  template: `<v-toolbar height="7%" id="app-top-navbar">
-  <v-tabs v-model="tab" class="top-menu-tab">
-    <v-tab key="Main">首頁</v-tab>
-    <v-tab key="Three">餐點介紹</v-tab>
-    <v-tab key="Four">派對外燴服務</v-tab>
-  </v-tabs>
-</v-toolbar>`
-});
-
 Vue.component("app-static-content", {
   template: `
   <div class="app_wrapper">
