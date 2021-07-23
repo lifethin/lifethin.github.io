@@ -73,6 +73,18 @@ footer .row {
   display: none;
 }
 
+header .v-tabs-bar__content {
+  height: 53px;
+  justify-content: flex-end;
+}
+
+header .v-tabs-bar__content .v-tab {
+  color: #fff700 !important;
+  font-size: 15px !important;
+  height: 54px;
+  padding: 13px !important;
+}
+
 @media only screen and (min-width: 768px) {
   #app-top-navbar {
     background-size: auto 100%;
