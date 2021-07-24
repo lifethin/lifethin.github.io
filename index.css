@@ -92,6 +92,7 @@ header .v-tabs-bar__content .v-tab {
   height: 64px;
   display: flex;
   align-items: flex-start;
+  flex-direction: row-reverse;
 }
 
 .toolbar-links {
@@ -119,5 +120,8 @@ header .v-tabs-bar__content .v-tab {
   main {
     padding-top: 53px !important;
     padding-bottom: 0px !important;
+  }
+  .v-toolbar__content {
+    flex-direction: row;
   }
 }
