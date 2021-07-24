@@ -16,6 +16,15 @@ Vue.component("app-static-content", {
           <v-tab key="Main">首頁</v-tab>
           <v-tab key="Three">餐點介紹</v-tab>
           <v-tab key="Four">派對外燴服務</v-tab>
+          <div>
+              <img src="images/button_call.png" />
+          </div>
+          <div>
+              <img src="images/button_facebook.png" />
+          </div>
+          <div>
+              <img src="images/button_line.png" />
+          </div>
         </v-tabs>
         <v-tabs-items v-model="tab" class="content-area">
           <v-tab-item key="Main">
