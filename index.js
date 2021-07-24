@@ -8,14 +8,7 @@ Vue.component("app-static-content", {
           <v-tab key="Three">餐點介紹</v-tab>
           <v-tab key="Four">派對外燴服務</v-tab>
         </v-tabs>
-      </v-toolbar>
-    </header>
-    <main>
-      <div id="app-static-content" style="padding: 0px;">
-        <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="tab" class="menu-tab">
-          <v-tab key="Main">首頁</v-tab>
-          <v-tab key="Three">餐點介紹</v-tab>
-          <v-tab key="Four">派對外燴服務</v-tab>
+        <div class="toolbar-links">
           <div>
               <img src="images/button_call.png" />
           </div>
@@ -25,6 +18,15 @@ Vue.component("app-static-content", {
           <div>
               <img src="images/button_line.png" />
           </div>
+        </div>
+      </v-toolbar>
+    </header>
+    <main>
+      <div id="app-static-content" style="padding: 0px;">
+        <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="tab" class="menu-tab">
+          <v-tab key="Main">首頁</v-tab>
+          <v-tab key="Three">餐點介紹</v-tab>
+          <v-tab key="Four">派對外燴服務</v-tab>
         </v-tabs>
         <v-tabs-items v-model="tab" class="content-area">
           <v-tab-item key="Main">
