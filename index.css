@@ -34,8 +34,8 @@ body,
   background-color: #690091;
   background-image: url("images/logo-resize.jpg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: center;
+  background-position: left 20px top 7px;
+  background-size: auto 72%;
 }
 
 #app-fixed-buttom-navbar {
@@ -107,11 +107,6 @@ header .v-tabs-bar__content .v-tab {
 }
 
 @media only screen and (min-width: 768px) {
-  #app-top-navbar {
-    background-size: auto 100%;
-    background-position: left 20px top 7px;
-    background-size: auto 72%;
-  }
   header {
     height: 53px !important;
   }
