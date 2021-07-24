@@ -88,6 +88,24 @@ header .v-tabs-bar__content .v-tab {
   color: #ffffff !important;
 }
 
+.v-toolbar__content {
+  height: 64px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.toolbar-links {
+  margin-left: 12px;
+  margin-top: -3px;
+  height: 52px;
+  display: flex;
+}
+
+.toolbar-links button {
+  padding: 10px;
+  height: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   #app-top-navbar {
     background-size: auto 100%;
