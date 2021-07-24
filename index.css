@@ -104,6 +104,8 @@ header .v-tabs-bar__content .v-tab {
 
 .toolbar-links button {
   padding: 10px;
+}
+.toolbar-links button img {
   height: 100%;
 }
 
