@@ -84,7 +84,7 @@ header .v-tabs-bar__content .v-tab {
   padding: 13px !important;
 }
 
-.v-application .primary--text {
+#app-top-navbar .v-application .primary--text {
   color: #ffffff !important;
 }
 
