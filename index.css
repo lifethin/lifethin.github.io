@@ -97,8 +97,8 @@ header .v-tabs-bar__content .v-tab {
 
 .toolbar-links {
   margin-left: 12px;
-  margin-top: -3px;
-  height: 52px;
+  margin-top: -6px;
+  height: 47px;
   display: flex;
 }
 
@@ -125,5 +125,9 @@ header .v-tabs-bar__content .v-tab {
   }
   .v-toolbar__content {
     flex-direction: row;
+  }
+  .toolbar-links {
+    margin-top: -3px;
+    height: 52px;
   }
 }
