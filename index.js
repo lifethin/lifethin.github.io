@@ -9,15 +9,15 @@ Vue.component("app-static-content", {
           <v-tab key="Four">派對外燴服務</v-tab>
         </v-tabs>
         <div class="toolbar-links">
-          <div>
+          <button>
               <img src="images/button_call.png" />
-          </div>
-          <div>
+          </button>
+          <button>
               <img src="images/button_facebook.png" />
-          </div>
-          <div>
+          </button>
+          <button>
               <img src="images/button_line.png" />
-          </div>
+          </button>
         </div>
       </v-toolbar>
     </header>
