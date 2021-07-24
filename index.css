@@ -127,7 +127,7 @@ header .v-tabs-bar__content .v-tab {
     flex-direction: row;
   }
   .toolbar-links {
-    margin-top: -3px;
+    margin-top: -4px;
     height: 52px;
   }
 }
