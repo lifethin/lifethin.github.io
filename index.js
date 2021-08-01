@@ -1,3 +1,5 @@
+const router = new VueRouter({ routes });
+
 const dgiApp = new Vue({
   template: `
   <v-app id="v-app">
@@ -55,6 +57,7 @@ const dgiApp = new Vue({
   </v-app>
   `,
   el: "#dgi-app",
+  router,
   vuetify: new Vuetify(),
   data: function() {
     return {
