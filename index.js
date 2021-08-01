@@ -68,6 +68,11 @@ const dgiApp = new Vue({
     };
   },
   mounted() {
+    // Get current route name
+    // Find the tab with the same route (property value) 
+    // Set that tab as 'selectedTab'
+    const tabIndex = this.tabs.findIndex(tab => tab.route === this.$route.name);
+    this.selectedTab = tabIndex;
     this.checkIsMobile();
     this.initFirebase();
   },
