@@ -52,35 +52,10 @@ Vue.component("app-static-content", {
     </main>
   </div>
   `,
-  data: function() {
-    return {
-      mainTab: null
-    };
-  },
-  mounted() {
-    // Get current route name
-    if (this.$route.name == 'menu') {
-       this.mainTab = 'Menu';
-    } else if (this.$route.name == 'partyservice') {
-       this.mainTab = 'Party';
-    } else {
-       this.mainTab = 'Main';
-    }
-  },
-  methods: {
-    updateRoute (route) {
-      console.log(route);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-      this.$router.push({ path: route })
-    }
-  }
-});
-
-const dgiApp = new Vue({
-  el: "#dgi-app",
   vuetify: new Vuetify(),
   data: function() {
     return {
-      mainTab: 0,
+      mainTab: null,
       isMobile: true
     };
   },
@@ -117,6 +92,10 @@ const dgiApp = new Vue({
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
+    },
+    updateRoute (route) {
+      console.log(route);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      this.$router.push({ path: route })
     }
   }
 });
