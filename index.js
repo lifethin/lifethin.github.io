@@ -64,7 +64,7 @@ const dgiApp = new Vue({
   vuetify: new Vuetify(),
   data: function() {
     return {
-      mainTab: '',
+      mainTab: 0,
       isMobile: true
     };
   },
