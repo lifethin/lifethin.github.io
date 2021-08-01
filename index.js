@@ -1,5 +1,4 @@
 const router = new VueRouter({
-  mode: 'history',
   routes: [
     { path: '/index' },
     { path: '/menu' },
