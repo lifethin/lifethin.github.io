@@ -1,10 +1,11 @@
-const routes = [
-  { path: 'index' },
-  { path: 'menu' },
-  { path: 'partyservice' },
-];
-
-const router = new VueRouter({ routes });
+const router = new VueRouter(
+  mode: 'history',
+  routes: [
+    { path: '/index' },
+    { path: '/menu' },
+    { path: '/partyservice' },
+  ]
+);
 
 const dgiApp = new Vue({
   template: `
@@ -13,9 +14,9 @@ const dgiApp = new Vue({
       <header>
         <v-toolbar id="app-top-navbar" style="height: 7px;">
           <v-tabs v-model="mainTab" class="top-menu-tab">
-            <v-tab key="Main" @click="updateRoute('index')">首頁</v-tab>
-            <v-tab key="Menu" @click="updateRoute('menu')">餐點介紹</v-tab>
-            <v-tab key="Party" @click="updateRoute('partyservice')">派對外燴服務</v-tab>
+            <v-tab key="Main" @click="updateRoute('/index')">首頁</v-tab>
+            <v-tab key="Menu" @click="updateRoute('/menu')">餐點介紹</v-tab>
+            <v-tab key="Party" @click="updateRoute('/partyservice')">派對外燴服務</v-tab>
           </v-tabs>
           <div class="toolbar-links">
             <button>
@@ -33,9 +34,9 @@ const dgiApp = new Vue({
       <main>
         <div id="app-static-content" style="padding: 0px;">
           <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="mainTab" class="menu-tab">
-            <v-tab key="Main" @click="updateRoute('index')">首頁</v-tab>
-            <v-tab key="Menu" @click="updateRoute('menu')">餐點介紹</v-tab>
-            <v-tab key="Party" @click="updateRoute('partyservice')">派對外燴服務</v-tab>
+            <v-tab key="Main" @click="updateRoute('/index')">首頁</v-tab>
+            <v-tab key="Menu" @click="updateRoute('/menu')">餐點介紹</v-tab>
+            <v-tab key="Party" @click="updateRoute('/partyservice')">派對外燴服務</v-tab>
           </v-tabs>
           <v-tabs-items v-model="mainTab" class="content-area">
             <v-tab-item key="Main">
@@ -73,9 +74,9 @@ const dgiApp = new Vue({
   },
   mounted() {
     // Get current route name
-    if (this.$route.name == 'menu') {
+    if (this.$route.name == '/menu') {
        this.mainTab = 'Menu';
-    } else if (this.$route.name == 'partyservice') {
+    } else if (this.$route.name == '/partyservice') {
        this.mainTab = 'Party';
     } else {
        this.mainTab = 'Main';
