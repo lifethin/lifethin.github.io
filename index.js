@@ -33,9 +33,9 @@ const dgiApp = new Vue({
       <main>
         <div id="app-static-content" style="padding: 0px;">
           <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="mainTab" class="menu-tab">
-            <v-tab key="Main" @click="updateRoute('/index')">首頁</v-tab>
-            <v-tab key="Menu" @click="updateRoute('/menu')">餐點介紹</v-tab>
-            <v-tab key="Party" @click="updateRoute('/partyservice')">派對外燴服務</v-tab>
+            <v-tab key="Main" @click="updateRoute('/index')" ref="index">首頁</v-tab>
+            <v-tab key="Menu" @click="updateRoute('/menu')" ref="menu">餐點介紹</v-tab>
+            <v-tab key="Party" @click="updateRoute('/partyservice')" ref="partyservice">派對外燴服務</v-tab>
           </v-tabs>
           <v-tabs-items v-model="mainTab" class="content-area">
             <v-tab-item key="Main">
@@ -72,17 +72,16 @@ const dgiApp = new Vue({
     };
   },
   mounted() {
-    console.log(1111);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    console.log(222);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     console.log(this.$router.history.current.path);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // Get current route name
     if (this.$router.history.current.path == '/menu') {
-       this.mainTab = 'Menu';
+       this.$refs.menu.click();
     } else if (this.$router.history.current.path == '/partyservice') {
-       this.mainTab = 'Party';
+       this.$refs.partyservice.click();
     } else {
-       this.mainTab = 'Main';
+       this.$refs.index.click();
     }
-    console.log(this.mainTab);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     this.checkIsMobile();
     this.initFirebase();
