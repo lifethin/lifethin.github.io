@@ -3,7 +3,7 @@ Vue.component("app-static-content", {
   <div class="app_wrapper">
     <header>
       <v-toolbar id="app-top-navbar" style="height: 7px;">
-        <v-tabs background-color="#3c5c1d" class="top-menu-tab">
+        <v-tabs background-color="#3c5c1d" v-model="tab" class="top-menu-tab">
           <v-tab key="Main">首頁</v-tab>
           <v-tab key="Menu">餐點介紹</v-tab>
           <v-tab key="Party">派對外燴服務</v-tab>
@@ -23,7 +23,7 @@ Vue.component("app-static-content", {
     </header>
     <main>
       <div id="app-static-content" style="padding: 0px;">
-        <v-tabs grow dark background-color="#3c5c1d" class="menu-tab">
+        <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="tab" class="menu-tab">
           <v-tab key="Main">首頁</v-tab>
           <v-tab key="Menu">餐點介紹</v-tab>
           <v-tab key="Party">派對外燴服務</v-tab>
