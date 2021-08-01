@@ -72,11 +72,11 @@ const dgiApp = new Vue({
     };
   },
   mounted() {
-    console.log(this.$route.name);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    console.log(this.$router.history.current.path);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // Get current route name
-    if (this.$route.name == '/menu') {
+    if (this.$router.history.current.path == '/menu') {
        this.mainTab = 'Menu';
-    } else if (this.$route.name == '/partyservice') {
+    } else if (this.$router.history.current.path == '/partyservice') {
        this.mainTab = 'Party';
     } else {
        this.mainTab = 'Main';
