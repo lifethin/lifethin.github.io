@@ -67,24 +67,25 @@ const dgiApp = new Vue({
   vuetify: new Vuetify(),
   data: function() {
     return {
-      mainTab: [
+      tabs: [
         { id: 1, route: '/index', name: '首頁' },
         { id: 2, route: '/menu', name: '餐點介紹' },
         { id: 3, route: '/partyservice', name: '派對外燴服務' }
-      ]
+      ],
+      mainTab: 'Main',
       isMobile: true
     };
   },
   mounted() {
-    console.log(333);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    console.log(4444);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     console.log(this.$router.history.current.path);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // Get current route name
     if (this.$router.history.current.path == '/menu') {
-       this.$refs.menu.click();
+       this.mainTab = 2;
     } else if (this.$router.history.current.path == '/partyservice') {
-       this.$refs.partyservice.click();
+       this.mainTab = 3;
     } else {
-       this.$refs.index.click();
+       this.mainTab = 1;
     }
 
     this.checkIsMobile();
