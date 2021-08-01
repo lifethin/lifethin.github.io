@@ -72,7 +72,7 @@ const dgiApp = new Vue({
         { id: 2, route: '/menu', name: '餐點介紹' },
         { id: 3, route: '/partyservice', name: '派對外燴服務' }
       ],
-      mainTab: 'Main',
+      mainTab: 1,
       isMobile: true
     };
   },
