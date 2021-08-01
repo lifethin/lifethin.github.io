@@ -95,6 +95,10 @@ const dgiApp = new Vue({
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
+    },
+    updateRoute (route) {
+      console.log(route);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      this.$router.push({ path: route })
     }
   }
 });
