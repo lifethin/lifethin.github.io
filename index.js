@@ -1,11 +1,11 @@
-const router = new VueRouter(
+const router = new VueRouter({
   mode: 'history',
   routes: [
     { path: '/index' },
     { path: '/menu' },
     { path: '/partyservice' },
   ]
-);
+});
 
 const dgiApp = new Vue({
   template: `
