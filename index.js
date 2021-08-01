@@ -72,6 +72,7 @@ const dgiApp = new Vue({
     };
   },
   mounted() {
+    console.log(this.$route.name);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // Get current route name
     if (this.$route.name == '/menu') {
        this.mainTab = 'Menu';
