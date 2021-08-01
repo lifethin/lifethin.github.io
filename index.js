@@ -72,6 +72,7 @@ const dgiApp = new Vue({
     };
   },
   mounted() {
+    console.log(1111);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     console.log(this.$router.history.current.path);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // Get current route name
     if (this.$router.history.current.path == '/menu') {
