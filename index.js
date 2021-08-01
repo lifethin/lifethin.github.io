@@ -73,7 +73,6 @@ const dgiApp = new Vue({
   },
   mounted() {
     console.log(this.currentRouteName);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    console.log(this.$router.history);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // Get current route name
     if (this.currentRouteName == '/menu') {
        this.mainTab = 'Menu';
@@ -82,6 +81,7 @@ const dgiApp = new Vue({
     } else {
        this.mainTab = 'Main';
     }
+    console.log(this.mainTab);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     this.checkIsMobile();
     this.initFirebase();
