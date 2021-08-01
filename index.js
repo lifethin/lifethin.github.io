@@ -1,3 +1,9 @@
+const routes = [
+  { path: '/' },
+  { path: '/menu' },
+  { path: '/partyservice' },
+];
+
 const router = new VueRouter({ routes });
 
 const dgiApp = new Vue({
@@ -7,9 +13,9 @@ const dgiApp = new Vue({
       <header>
         <v-toolbar id="app-top-navbar" style="height: 7px;">
           <v-tabs v-model="mainTab" class="top-menu-tab">
-            <v-tab key="Main" @click="updateRoute('')">首頁</v-tab>
-            <v-tab key="Menu" @click="updateRoute('menu')">餐點介紹</v-tab>
-            <v-tab key="Party" @click="updateRoute('partyservice')">派對外燴服務</v-tab>
+            <v-tab key="Main" @click="updateRoute('/')">首頁</v-tab>
+            <v-tab key="Menu" @click="updateRoute('/menu')">餐點介紹</v-tab>
+            <v-tab key="Party" @click="updateRoute('/partyservice')">派對外燴服務</v-tab>
           </v-tabs>
           <div class="toolbar-links">
             <button>
