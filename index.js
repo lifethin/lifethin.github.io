@@ -72,7 +72,7 @@ const dgiApp = new Vue({
         { id: 2, route: '/menu', name: '餐點介紹' },
         { id: 3, route: '/partyservice', name: '派對外燴服務' }
       ],
-      mainTab: 1,
+      mainTab: 0,
       isMobile: true
     };
   },
@@ -81,11 +81,11 @@ const dgiApp = new Vue({
     console.log(this.$router.history.current.path);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // Get current route name
     if (this.$router.history.current.path == '/menu') {
-       this.mainTab = 2;
-    } else if (this.$router.history.current.path == '/partyservice') {
-       this.mainTab = 3;
-    } else {
        this.mainTab = 1;
+    } else if (this.$router.history.current.path == '/partyservice') {
+       this.mainTab = 2;
+    } else {
+       this.mainTab = 0;
     }
 
     this.checkIsMobile();
