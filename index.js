@@ -52,10 +52,19 @@ Vue.component("app-static-content", {
     </main>
   </div>
   `,
+  data: function() {
+    return {
+      mainTab: null
+    };
+  }
+});
+
+const dgiApp = new Vue({
+  el: "#dgi-app",
   vuetify: new Vuetify(),
   data: function() {
     return {
-      mainTab: null,
+      mainTab: 0,
       isMobile: true
     };
   },
@@ -68,7 +77,7 @@ Vue.component("app-static-content", {
     } else {
        this.mainTab = 'Main';
     }
-    
+
     this.checkIsMobile();
     this.initFirebase();
   },
@@ -92,10 +101,6 @@ Vue.component("app-static-content", {
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
-    },
-    updateRoute (route) {
-      console.log(route);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-      this.$router.push({ path: route })
     }
   }
 });
