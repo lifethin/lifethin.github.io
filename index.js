@@ -72,11 +72,12 @@ const dgiApp = new Vue({
     };
   },
   mounted() {
-    console.log(this.$router.history.current.path);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    console.log(this.currentRouteName);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    console.log(this.$router.history);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // Get current route name
-    if (this.$router.history.current.path == '/menu') {
+    if (this.currentRouteName == '/menu') {
        this.mainTab = 'Menu';
-    } else if (this.$router.history.current.path == '/partyservice') {
+    } else if (this.currentRouteName == '/partyservice') {
        this.mainTab = 'Party';
     } else {
        this.mainTab = 'Main';
@@ -108,6 +109,11 @@ const dgiApp = new Vue({
     },
     updateRoute (route) {
       this.$router.push({ path: route })
+    }
+  },
+  computed: {
+    currentRouteName() {
+        return this.$route.name;
     }
   }
 });
