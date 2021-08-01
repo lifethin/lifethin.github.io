@@ -3,11 +3,11 @@ Vue.component("app-static-content", {
   <div class="app_wrapper">
     <header>
       <v-toolbar id="app-top-navbar" style="height: 7px;">
-        <v-tabs v-model="tab" class="top-menu-tab">
-          <v-tab key="Main">首頁</v-tab>
-          <v-tab key="Three">餐點介紹</v-tab>
-          <v-tab key="Four">派對外燴服務</v-tab>
-        </v-tabs>
+        <div background-color="#3c5c1d" class="top-menu-tab">
+          <div class="link_main">首頁</div>
+          <div class="link_menu">餐點介紹</div>
+          <div class="link_party">派對外燴服務</div>
+        </div>
         <div class="toolbar-links">
           <button>
               <img src="images/button_call.png" />
@@ -23,11 +23,11 @@ Vue.component("app-static-content", {
     </header>
     <main>
       <div id="app-static-content" style="padding: 0px;">
-        <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="tab" class="menu-tab">
-          <v-tab key="Main">首頁</v-tab>
-          <v-tab key="Three">餐點介紹</v-tab>
-          <v-tab key="Four">派對外燴服務</v-tab>
-        </v-tabs>
+        <div background-color="#3c5c1d" class="menu-tab">
+          <div class="link_main">首頁</div>
+          <div class="link_menu">餐點介紹</div>
+          <div class="link_party">派對外燴服務</div>
+        </div>
         <v-tabs-items v-model="tab" class="content-area">
           <v-tab-item key="Main">
             <picture>
