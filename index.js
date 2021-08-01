@@ -3,7 +3,7 @@ Vue.component("app-static-content", {
   <div class="app_wrapper">
     <header>
       <v-toolbar id="app-top-navbar" style="height: 7px;">
-        <v-tabs background-color="#3c5c1d" v-model="tab" class="top-menu-tab">
+        <v-tabs v-model="tab" class="top-menu-tab">
           <v-tab key="Main">首頁</v-tab>
           <v-tab key="Menu">餐點介紹</v-tab>
           <v-tab key="Party">派對外燴服務</v-tab>
