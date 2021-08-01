@@ -98,6 +98,7 @@ const dgiApp = new Vue({
       firebase.analytics();
     },
     updateRoute (route) {
+      console.log(route);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       this.$router.push({ path: route })
     }
   }
