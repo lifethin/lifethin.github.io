@@ -3,7 +3,7 @@ Vue.component("app-static-content", {
   <div class="app_wrapper">
     <header>
       <v-toolbar id="app-top-navbar" style="height: 7px;">
-        <v-tabs v-model="tab" class="top-menu-tab">
+        <v-tabs v-model="mainTab" class="top-menu-tab">
           <v-tab key="Main" @click="updateRoute('')">首頁</v-tab>
           <v-tab key="Menu" @click="updateRoute('menu')">餐點介紹</v-tab>
           <v-tab key="Party" @click="updateRoute('partyservice')">派對外燴服務</v-tab>
@@ -23,12 +23,12 @@ Vue.component("app-static-content", {
     </header>
     <main>
       <div id="app-static-content" style="padding: 0px;">
-        <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="tab" class="menu-tab">
+        <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="mainTab" class="menu-tab">
           <v-tab key="Main" @click="updateRoute('')">首頁</v-tab>
           <v-tab key="Menu" @click="updateRoute('menu')">餐點介紹</v-tab>
           <v-tab key="Party" @click="updateRoute('partyservice')">派對外燴服務</v-tab>
         </v-tabs>
-        <v-tabs-items v-model="tab" class="content-area">
+        <v-tabs-items v-model="mainTab" class="content-area">
           <v-tab-item key="Main">
             <picture>
               <source media="(min-width: 465px)" srcset="images/20210714_home_desktop.jpg?ver=1.3" />
@@ -64,15 +64,20 @@ const dgiApp = new Vue({
   vuetify: new Vuetify(),
   data: function() {
     return {
+      mainTab: '',
       isMobile: true
     };
   },
   mounted() {
     // Get current route name
-    // Find the tab with the same route (property value) 
-    // Set that tab as 'selectedTab'
-    const tabIndex = this.tabs.findIndex(tab => tab.route === this.$route.name);
-    this.selectedTab = tabIndex;
+    if (this.$route.name == 'menu') {
+       this.mainTab = 'Menu';
+    } else if (this.$route.name == 'partyservice') {
+       this.mainTab = 'Party';
+    } else {
+       this.mainTab = 'Main';
+    }
+    
     this.checkIsMobile();
     this.initFirebase();
   },
