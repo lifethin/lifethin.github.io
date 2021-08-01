@@ -13,9 +13,9 @@ const dgiApp = new Vue({
       <header>
         <v-toolbar id="app-top-navbar" style="height: 7px;">
           <v-tabs v-model="mainTab" class="top-menu-tab">
-            <v-tab key="Main" @click="updateRoute('/index')">首頁</v-tab>
-            <v-tab key="Menu" @click="updateRoute('/menu')">餐點介紹</v-tab>
-            <v-tab key="Party" @click="updateRoute('/partyservice')">派對外燴服務</v-tab>
+             <v-tab v-for="tab of tabs" :key="tab.id" @click="updateRoute(tab.route)">
+               {{tab.name}}
+             </v-tab>
           </v-tabs>
           <div class="toolbar-links">
             <button>
@@ -33,24 +33,24 @@ const dgiApp = new Vue({
       <main>
         <div id="app-static-content" style="padding: 0px;">
           <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="mainTab" class="menu-tab">
-            <v-tab key="Main" @click="updateRoute('/index')" ref="index">首頁</v-tab>
-            <v-tab key="Menu" @click="updateRoute('/menu')" ref="menu">餐點介紹</v-tab>
-            <v-tab key="Party" @click="updateRoute('/partyservice')" ref="partyservice">派對外燴服務</v-tab>
+             <v-tab v-for="tab of tabs" :key="tab.id" @click="updateRoute(tab.route)">
+               {{tab.name}}
+             </v-tab>
           </v-tabs>
           <v-tabs-items v-model="mainTab" class="content-area">
-            <v-tab-item key="Main">
+            <v-tab-item key="1">
               <picture>
                 <source media="(min-width: 465px)" srcset="images/20210714_home_desktop.jpg?ver=1.3" />
                 <img src="images/20210714_home_phone.jpg?ver=1.3" />
               </picture>
             </v-tab-item>
-            <v-tab-item key="Menu">
+            <v-tab-item key="2">
               <picture>
                 <source media="(min-width: 465px)" srcset="images/20210714_menu_desktop.jpg?ver=1.3" />
                 <img src="images/20210714_menu_phone.jpg?ver=1.3" />
               </picture>
             </v-tab-item>
-            <v-tab-item key="Party">
+            <v-tab-item key="3">
               <picture>
                 <source media="(min-width: 465px)" srcset="images/20210714_party_desktop.jpg?ver=1.3" />
                 <img src="images/20210714_party_phone.jpg?ver=1.3" />
@@ -67,12 +67,16 @@ const dgiApp = new Vue({
   vuetify: new Vuetify(),
   data: function() {
     return {
-      mainTab: 'Main',
+      mainTab: [
+        { id: 1, route: '/index', name: '首頁' },
+        { id: 2, route: '/menu', name: '餐點介紹' },
+        { id: 3, route: '/partyservice', name: '派對外燴服務' }
+      ]
       isMobile: true
     };
   },
   mounted() {
-    console.log(222);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    console.log(333);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     console.log(this.$router.history.current.path);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // Get current route name
     if (this.$router.history.current.path == '/menu') {
