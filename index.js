@@ -1,7 +1,7 @@
 const routes = [
-  { path: '/' },
-  { path: '/menu' },
-  { path: '/partyservice' },
+  { path: 'index' },
+  { path: 'menu' },
+  { path: 'partyservice' },
 ];
 
 const router = new VueRouter({ routes });
@@ -13,9 +13,9 @@ const dgiApp = new Vue({
       <header>
         <v-toolbar id="app-top-navbar" style="height: 7px;">
           <v-tabs v-model="mainTab" class="top-menu-tab">
-            <v-tab key="Main" @click="updateRoute('/')">首頁</v-tab>
-            <v-tab key="Menu" @click="updateRoute('/menu')">餐點介紹</v-tab>
-            <v-tab key="Party" @click="updateRoute('/partyservice')">派對外燴服務</v-tab>
+            <v-tab key="Main" @click="updateRoute('index')">首頁</v-tab>
+            <v-tab key="Menu" @click="updateRoute('menu')">餐點介紹</v-tab>
+            <v-tab key="Party" @click="updateRoute('partyservice')">派對外燴服務</v-tab>
           </v-tabs>
           <div class="toolbar-links">
             <button>
@@ -33,7 +33,7 @@ const dgiApp = new Vue({
       <main>
         <div id="app-static-content" style="padding: 0px;">
           <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="mainTab" class="menu-tab">
-            <v-tab key="Main" @click="updateRoute('')">首頁</v-tab>
+            <v-tab key="Main" @click="updateRoute('index')">首頁</v-tab>
             <v-tab key="Menu" @click="updateRoute('menu')">餐點介紹</v-tab>
             <v-tab key="Party" @click="updateRoute('partyservice')">派對外燴服務</v-tab>
           </v-tabs>
@@ -106,7 +106,6 @@ const dgiApp = new Vue({
       firebase.analytics();
     },
     updateRoute (route) {
-      console.log(route);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       this.$router.push({ path: route })
     }
   }
