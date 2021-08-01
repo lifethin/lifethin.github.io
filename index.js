@@ -4,9 +4,9 @@ Vue.component("app-static-content", {
     <header>
       <v-toolbar id="app-top-navbar" style="height: 7px;">
         <v-tabs v-model="tab" class="top-menu-tab">
-          <v-tab key="Main">首頁</v-tab>
-          <v-tab key="Menu">餐點介紹</v-tab>
-          <v-tab key="Party">派對外燴服務</v-tab>
+          <v-tab key="Main" @click="updateRoute('')">首頁</v-tab>
+          <v-tab key="Menu" @click="updateRoute('menu')">餐點介紹</v-tab>
+          <v-tab key="Party" @click="updateRoute('partyservice')">派對外燴服務</v-tab>
         </v-tabs>
         <div class="toolbar-links">
           <button>
@@ -24,9 +24,9 @@ Vue.component("app-static-content", {
     <main>
       <div id="app-static-content" style="padding: 0px;">
         <v-tabs grow="grow" background-color="#3c5c1d" dark v-model="tab" class="menu-tab">
-          <v-tab key="Main">首頁</v-tab>
-          <v-tab key="Menu">餐點介紹</v-tab>
-          <v-tab key="Party">派對外燴服務</v-tab>
+          <v-tab key="Main" @click="updateRoute('')">首頁</v-tab>
+          <v-tab key="Menu" @click="updateRoute('menu')">餐點介紹</v-tab>
+          <v-tab key="Party" @click="updateRoute('partyservice')">派對外燴服務</v-tab>
         </v-tabs>
         <v-tabs-items v-model="tab" class="content-area">
           <v-tab-item key="Main">
@@ -91,6 +91,9 @@ const dgiApp = new Vue({
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
+    },
+    updateRoute (route) {
+      this.$router.push({ path: route })
     }
   }
 });
