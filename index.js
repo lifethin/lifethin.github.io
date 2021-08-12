@@ -18,13 +18,13 @@ const dgiApp = new Vue({
              </v-tab>
           </v-tabs>
           <div class="toolbar-links">
-            <button>
+            <button onClick="window.open('https://lihi1.com/6f8FO')">
                 <img src="images/button_call.png" />
             </button>
-            <button>
+            <button onClick="window.open('https://lihi1.com/It57O')">
                 <img src="images/button_facebook.png" />
             </button>
-            <button>
+            <button onClick="window.open('https://lihi1.com/lzw8w')">
                 <img src="images/button_line.png" />
             </button>
           </div>
@@ -48,6 +48,26 @@ const dgiApp = new Vue({
               <picture>
                 <source media="(min-width: 465px)" srcset="images/20210714_menu_desktop.jpg?ver=1.3" />
                 <img src="images/20210714_menu_phone.jpg?ver=1.3" />
+                <button
+                  onClick="window.open('https://lihi1.com/NXj6k')"
+                  style="
+                    display: block;
+                    position: absolute;
+                    width: 25vw;
+                    height: 9vw;
+                    top: 71vw;
+                    left: 38vw;
+                "></button>
+                <button
+                  onClick="window.open('https://lihi1.com/d6B3R')"
+                  style="
+                    display: block;
+                    position: absolute;
+                    width: 25vw;
+                    height: 10vw;
+                    top: 487vw;
+                    left: 37vw;
+                "></button>
               </picture>
             </v-tab-item>
             <v-tab-item key="3">
@@ -77,8 +97,6 @@ const dgiApp = new Vue({
     };
   },
   mounted() {
-    console.log(4444);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    console.log(this.$router.history.current.path);//test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // Get current route name
     if (this.$router.history.current.path == '/menu') {
        this.mainTab = 1;
