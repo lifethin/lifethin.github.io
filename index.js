@@ -40,12 +40,6 @@ const dgiApp = new Vue({
           <v-tabs-items v-model="mainTab" class="content-area">
             <v-tab-item key="1">
               <picture>
-                <source media="(min-width: 465px)" srcset="images/20210714_home_desktop.jpg?ver=1.3" />
-                <img src="images/20210714_home_phone.jpg?ver=1.3" />
-              </picture>
-            </v-tab-item>
-            <v-tab-item key="2">
-              <picture>
                 <source media="(min-width: 465px)" srcset="images/20210714_menu_desktop.jpg?ver=1.3" />
                 <img src="images/20210714_menu_phone.jpg?ver=1.3" />
                 <button
@@ -70,6 +64,14 @@ const dgiApp = new Vue({
                 "></button>
               </picture>
             </v-tab-item>
+            
+            <v-tab-item key="2">
+              <picture>
+                <source media="(min-width: 465px)" srcset="images/20210714_home_desktop.jpg?ver=1.3" />
+                <img src="images/20210714_home_phone.jpg?ver=1.3" />
+              </picture>
+            </v-tab-item>
+            
             <v-tab-item key="3">
               <picture>
                 <source media="(min-width: 465px)" srcset="images/20210714_party_desktop.jpg?ver=1.3" />
