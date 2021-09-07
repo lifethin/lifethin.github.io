@@ -6,6 +6,7 @@ const router = new VueRouter({
   ]
 });
 
+
 const dgiApp = new Vue({
   template: `
   <v-app id="v-app">
