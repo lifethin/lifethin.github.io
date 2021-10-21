@@ -303,23 +303,17 @@ const dgiApp = new Vue({
 			  
 			  <div class="address-block">
 				<div class="address-block-wrapper">
-					<div class="address-col address-left">
+					<div class="address-col">
 						<div class="address-head color-blue">★</div>
 							南區: 學府路135巷1號B1
 							<br>Tel: 04-2223-7607
 							<br>Phone: 0982-955415
 					</div>
-					<div class="address-col address-right">
-							<div class="address-head color-red">★</div>
-							北屯區: 軍福十三路22號
-							<br>Tel: 04-2439-1242
-							<br>Phone: 0982-955415
-					</div>
 					<div style="clear: both"></div>
 				</div>
 			  </div>
-			  <div class="bottom-message-block">配合政府三級管制 | 疫情期間 | 店休</div>
-			  <div class="bottom-message-block__small">配合政府三級管制<br>疫情期間 | 店休</div>
+			  <div class="bottom-message-block">配合政府二級管制</div>
+			  <div class="bottom-message-block__small">配合政府二級管制</div>
 			  <div class="bottom-logo-block">
 					<div class="inline-block bottom-logo-block__text">© 2021</div>
 					<img class="inline-block" src="images/bottom_logo.jpg?ver=1.1" />
@@ -455,23 +449,17 @@ const dgiApp = new Vue({
 			  
 			  <div class="address-block">
 				<div class="address-block-wrapper">
-					<div class="address-col address-left">
+					<div class="address-col">
 						<div class="address-head color-blue">★</div>
 							南區: 學府路135巷1號B1
 							<br>Tel: 04-2223-7607
 							<br>Phone: 0982-955415
 					</div>
-					<div class="address-col address-right">
-							<div class="address-head color-red">★</div>
-							北屯區: 軍福十三路22號
-							<br>Tel: 04-2439-1242
-							<br>Phone: 0982-955415
-					</div>
 					<div style="clear: both"></div>
 				</div>
 			  </div>
-			  <div class="bottom-message-block">配合政府三級管制 | 疫情期間 | 店休</div>
-			  <div class="bottom-message-block__small">配合政府三級管制<br>疫情期間 | 店休</div>
+			  <div class="bottom-message-block">配合政府二級管制</div>
+			  <div class="bottom-message-block__small">配合政府二級管制</div>
 			  <div class="bottom-logo-block">
 					<div class="inline-block bottom-logo-block__text">© 2021</div>
 					<img class="inline-block" src="images/bottom_logo.jpg?ver=1.1" />
@@ -493,23 +481,17 @@ const dgiApp = new Vue({
               </picture>
 			  <div class="address-block">
 				<div class="address-block-wrapper">
-					<div class="address-col address-left">
+					<div class="address-col">
 						<div class="address-head color-blue">★</div>
 							南區: 學府路135巷1號B1
 							<br>Tel: 04-2223-7607
 							<br>Phone: 0982-955415
 					</div>
-					<div class="address-col address-right">
-							<div class="address-head color-red">★</div>
-							北屯區: 軍福十三路22號
-							<br>Tel: 04-2439-1242
-							<br>Phone: 0982-955415
-					</div>
 					<div style="clear: both"></div>
 				</div>
 			  </div>
-			  <div class="bottom-message-block">配合政府三級管制 | 疫情期間 | 店休</div>
-			  <div class="bottom-message-block__small">配合政府三級管制<br>疫情期間 | 店休</div>
+			  <div class="bottom-message-block">配合政府二級管制</div>
+			  <div class="bottom-message-block__small">配合政府二級管制</div>
 			  <div class="bottom-logo-block">
 					<div class="inline-block bottom-logo-block__text">© 2021</div>
 					<img class="inline-block" src="images/bottom_logo.jpg?ver=1.1" />
