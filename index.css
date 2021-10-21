@@ -596,6 +596,7 @@ header .v-tabs-bar__content .v-tab {
 
 .address-block {
 	width: 100%;
+	display: flex;
 	display: block;
 	font-size: 27px;
 	font-weight: 500;
@@ -605,7 +606,7 @@ header .v-tabs-bar__content .v-tab {
 }
 
 .address-block-wrapper {
-	width: 742px;
+	width: auto;
 	display: block;
 	margin: 0 auto;
 }
@@ -679,7 +680,7 @@ header .v-tabs-bar__content .v-tab {
 		padding: 21px 0;
 	}
 	.address-block-wrapper {
-		width: 899px;
+		width: auto;
 	}
 	.address-col {
 		width: 385px;
@@ -716,7 +717,7 @@ header .v-tabs-bar__content .v-tab {
 		width: 100%;
 	}
 	.address-block-wrapper {
-		width: 100%;
+		width: auto;
 	}
 	.address-col {
 		width: 397px;
