@@ -312,8 +312,11 @@ const dgiApp = new Vue({
 					<div style="clear: both"></div>
 				</div>
 			  </div>
-			  <div class="bottom-message-block">配合政府二級管制<br>店內用餐人數有管制<br>請先預約訂位</div>
-			  <div class="bottom-message-block__small">配合政府二級管制<br>店內用餐人數有管制<br>請先預約訂位</div>
+			  <div class="bottom-message-block">
+					配合政府二級管制
+					<br>
+					<span class="bottom-message-block2">店內用餐人數有管制 | 請先預約訂位</span>
+			  </div>
 			  <div class="bottom-logo-block">
 					<div class="inline-block bottom-logo-block__text">© 2021</div>
 					<img class="inline-block" src="images/bottom_logo.jpg?ver=1.1" />
@@ -458,8 +461,11 @@ const dgiApp = new Vue({
 					<div style="clear: both"></div>
 				</div>
 			  </div>
-			  <div class="bottom-message-block">配合政府二級管制<br>店內用餐人數有管制<br>請先預約訂位</div>
-			  <div class="bottom-message-block__small">配合政府二級管制<br>店內用餐人數有管制<br>請先預約訂位</div>
+			  <div class="bottom-message-block">
+					配合政府二級管制
+					<br>
+					<span class="bottom-message-block2">店內用餐人數有管制 | 請先預約訂位</span>
+			  </div>
 			  <div class="bottom-logo-block">
 					<div class="inline-block bottom-logo-block__text">© 2021</div>
 					<img class="inline-block" src="images/bottom_logo.jpg?ver=1.1" />
@@ -490,8 +496,11 @@ const dgiApp = new Vue({
 					<div style="clear: both"></div>
 				</div>
 			  </div>
-			  <div class="bottom-message-block">配合政府二級管制<br>店內用餐人數有管制<br>請先預約訂位</div>
-			  <div class="bottom-message-block__small">配合政府二級管制<br>店內用餐人數有管制<br>請先預約訂位</div>
+			  <div class="bottom-message-block">
+					配合政府二級管制
+					<br>
+					<span class="bottom-message-block2">店內用餐人數有管制 | 請先預約訂位</span>
+			  </div>
 			  <div class="bottom-logo-block">
 					<div class="inline-block bottom-logo-block__text">© 2021</div>
 					<img class="inline-block" src="images/bottom_logo.jpg?ver=1.1" />

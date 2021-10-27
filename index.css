@@ -637,17 +637,17 @@ header .v-tabs-bar__content .v-tab {
 	color: #DF2A31;
 }
 
-.bottom-message-block,
-.bottom-message-block__small {
+.bottom-message-block {
 	text-align: center;
-    font-size: 49px;
+    font-size: 3.5vw;
+	line-height: 4vw;
     font-weight: 700;
     background: #E22A32;
     color: white;
     padding: 28px 0;
 }
-.bottom-message-block__small {
-	display: none;
+.bottom-message-block2 {
+	font-size: 2.5vw;
 }
 
 .bottom-logo-block {
@@ -729,14 +729,6 @@ header .v-tabs-bar__content .v-tab {
 	.address-right {
 		float: none;
 	}
-
-	.bottom-message-block {
-		display:none;
-	}
-	.bottom-message-block__small {
-		display:block;
-	}
-	
 }
 
 @media only screen and (max-width: 768px) {
@@ -898,6 +890,14 @@ header .v-tabs-bar__content .v-tab {
 	.home-supporters ul img {
 		height: 11vw;
 	}
+	
+	.bottom-message-block {
+		font-size: 5vw;
+		line-height: 6vw;
+	}
+	.bottom-message-block2 {
+		font-size: 3.5vw;
+	}
 }
 
 @media only screen and (max-width: 465px) {
@@ -915,14 +915,6 @@ header .v-tabs-bar__content .v-tab {
 	}
 	.address-right {
 		float: none;
-	}
-
-	.bottom-message-block {
-		display:none;
-	}
-	.bottom-message-block__small {
-		font-size: 9vw;
-		display:block;
 	}
 	
 	.bottom-logo-block img {
